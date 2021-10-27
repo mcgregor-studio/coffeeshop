@@ -1,0 +1,70 @@
+/* All font sizing is based on the body's default root font size (16px) */
+/* Variables */
+$no-margin: 0;
+$primary-colour: #FFF0ED;
+$secondary-colour: #5BACC3;
+$tertiary-colour: #393939;
+$unit: 1.25rem;
+
+/* Mixins */
+@mixin flex-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin button() {
+    min-width: 11.25rem;
+    max-width: 80vw;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: $no-margin;
+}
+h1, h2, h3, p, li, a {
+    font-family: 'Open Sans', sans-serif;
+    color: #393939;
+    margin: $no-margin;
+	list-style-type: none;
+}
+h1, h2 {
+    font-size: 3.75rem;
+    font-weight: lighter;
+}
+h3, #toolbar-title {
+    font-size: 2.06rem;
+    font-weight: lighter;
+}
+p {
+    font-size: 1.125rem;
+}
+a {
+    text-decoration: none;
+}
+/* Header */
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: $unit;
+    &__container {
+        @extend .toolbar;
+        padding: 0;
+    }
+    &__title {
+    margin: $no-margin;
+    }
+    &__list {
+        @extend .toolbar;
+        &--item {
+            list-style-type: none;
+            font-size: 1.3125rem;
+            margin: $no-margin $unit;
+        }
+        &--active-link {
+           color: $secondary-colour;
+        }
+    }
+
+}

@@ -1,0 +1,158 @@
+/* All font sizing is based on the body's default root font size (16px) */
+/* Variables */
+/* Mixins */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, p, li, a {
+  font-family: "Open Sans", sans-serif;
+  color: #393939;
+  margin: 0;
+  list-style-type: none;
+}
+
+h1, h2 {
+  font-size: 3.75rem;
+  font-weight: lighter;
+}
+
+h3, #toolbar-title {
+  font-size: 2.06rem;
+  font-weight: lighter;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+.toolbar, .toolbar__list, .toolbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+}
+.toolbar__container {
+  padding: 0;
+}
+.toolbar__title {
+  margin: 0;
+}
+.toolbar__list--item {
+  list-style-type: none;
+  font-size: 1.3125rem;
+  margin: 0 1.25rem;
+}
+.toolbar__list--active-link {
+  color: #5BACC3;
+}
+
+/* Global Styling */
+h2, h3, p {
+  text-align: center;
+}
+
+/* Header */
+.toolbar {
+  background-color: #FFF0ED;
+}
+
+/* Header Image */
+.header-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../assets/images/coffee-circle.jpg") center/cover no-repeat;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 35.9375rem;
+  max-height: 37.5rem;
+}
+.header-image__container, .header-image__container--border {
+  min-width: 17.5rem;
+  max-width: 18.75rem;
+  min-height: 11.25rem;
+  max-height: 12.5rem;
+  position: relative;
+  background: #393939;
+}
+.header-image__container--border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background: none;
+  position: absolute;
+  top: -0.9375rem;
+  left: -0.9375rem;
+  border: 0.3125rem solid #5BACC3;
+}
+.header-image__container--title {
+  text-align: center;
+  color: #FFF;
+}
+
+/* Menu Navigation */
+.menu__items {
+  background: #393939;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 3.75rem;
+  max-height: 5rem;
+  text-align: center;
+}
+.menu__nav-item {
+  border-left: 0.25rem solid #5BACC3;
+  padding-left: 1.25rem;
+  margin: 1.25rem 1.25rem 0 0;
+}
+.menu__nav-item--link {
+  font-size: 1.3125rem;
+  font-weight: normal;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+ul.menu__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+/* Menu Items */
+#hot-drinks, #pastries {
+  background: #FFF0ED;
+}
+
+#cold-drinks {
+  background: #F7F7F7;
+}
+
+.menu-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.25rem;
+}
+.menu-section__title {
+  padding-bottom: 1.25rem;
+}
+.menu-section__item {
+  padding-top: 1.25rem;
+}
+.menu-section__item--desc {
+  font-size: 1.125rem;
+  font-style: italic;
+  max-width: 50vw;
+}
+.menu-section__item--price {
+  color: #5BACC3;
+}/*# sourceMappingURL=menu.css.map */

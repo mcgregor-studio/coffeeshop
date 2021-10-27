@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./scss/landing.css" />
+    <title>Coffee Shop - Home</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <nav class="toolbar">
+        <div class="toolbar__container">
+          <img
+            class="toolbar__icon"
+            src="./assets/logos/coffee-beans-logo-and-footer.svg"
+            alt="coffee bean logo"
+          />
+          <h2 class="toolbar__title">nitro</h2>
+        </div>
+        <ul class="toolbar__list">
+          <li class="toolbar__list--item">
+            <a class="toolbar__list--link" href="index.html">ABOUT</a>
+          </li>
+          <li class="toolbar__list--item">
+            <a class="toolbar__list--link" href="./pages/menu.html">MENU</a>
+          </li>
+          <li class="toolbar__list--item">
+            <a class="toolbar__list--active-link" href="./pages/menu.html"
+              >SHOP NOW</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Intro -->
+      <div class="intro">
+        <div class="intro__container">
+          <h1 class="intro__container--title">Nitro Coffee</h1>
+          <p class="intro__container--desc">
+            Coffee is a brewed drink prepared from roasted coffee beans, the
+            seeds of berries from certain Coffea species.
+          </p>
+          <div class="button__container">
+            <div class="button__container--border">
+            </div>
+            <button class="button">SHOP NOW</button>
+          </div>
+        </div>
+        <img
+          class="intro__image"
+          src="./assets/images/coffeebeans-hero.png"
+          alt="coffee bag"
+        />
+      </div>
+    </header>
+
+    <!-- Products -->
+    <section class="product">
+      <h2 class="product__title">Our Products</h2>
+      <div class="product__container">
+        <card class="product__card">
+          <img
+            class="product__card--image"
+            src="./assets/images/coffeebeans.png"
+            alt="coffee beans"
+          />
+          <div class="product__card--container">
+            <div class="product__card--desc">
+              <h3 class="product__card--title">Coffee Beans</h3>
+              <p>Pack of 3</p>
+            </div>
+            <strong class="product__card--price">$18.99</strong>
+          </div>
+        </card>
+        <card class="product__card">
+          <img
+            class="product__card--image"
+            src="./assets/images/coldbrew.png"
+            alt="cold brew"
+          />
+          <div class="product__card--container">
+            <div class="product__card--desc">
+              <h3 class="product__card--title">Cold Brew</h3>
+              <p>1 can</p>
+            </div>
+            <strong class="product__card--price">$4.99</strong>
+          </div>
+        </card>
+        <card class="product__card">
+          <img
+            class="product__card--image"
+            src="./assets/images/inhousebrew.png"
+            alt="in-house brew"
+          />
+          <div class="product__card--container">
+            <div class="product__card--desc">
+              <h3 class="product__card--title">In-house Brew</h3>
+              <p>1 cup</p>
+            </div>
+            <strong class="product__card--price">$2.99</strong>
+          </div>
+        </card>
+      </div>
+      <div class="button__container button--center">
+        <div class="button__container--border-center">
+        </div>
+        <button class="button">VIEW ALL</button>
+      </div>
+    </section>
+
+    <!-- Discounts -->
+    <section class="discounts">
+      <div class="discounts__container">
+        <div class="discounts__section--left">
+          <h2 class="discounts__title">We're Different</h2>
+          <p class="discounts__desc">
+            We grow and roast our own beans. Every bean, every cup, every step
+            of the way, we strive for excellence.
+          </p>
+          <div class="discounts__row">
+            <img
+              class="discounts__row--icon"
+              src="./assets/logos/planting.svg"
+            />
+            <img
+              class="discounts__row--icon"
+              src="./assets/logos/coffee-beans.svg"
+            />
+            <img
+              class="discounts__row--icon"
+              src="./assets/logos/coffee-cup.svg"
+            />
+          </div>
+          <div class="button__container">
+            <a href="index.html">
+            <div class="button__container--border">
+            </div>
+            <button class="button">LEARN MORE</button>
+          </div>
+            </a>
+        </div>
+        <div class="discounts__section--right">
+           <img
+            class="discounts__brew--can"
+            src="./assets/images/tiltedcan.png"
+            alt="tilted can"
+          />
+        	<div class="discounts__section--border">
+          </div>
+        </div>
+      </div>
+      <p class="discounts__text">
+        Get 20% off your first order with code: <strong>FirstNitro</strong>
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img
+        class="footer__icon footer__icon--left"
+        src="./assets/logos/coffee-beans-logo-and-footer.svg"
+        alt="coffee bean logo"
+      />
+   <div class="footer__container">
+        <div class="footer__address footer__container--item">
+          <h3 class="footer__title">Address</h3>
+          <p>
+            503 Broadway Penthouse
+            <br />
+            New York
+          </p>
+        </div>
+        <div class="footer__hours footer__container--item">
+          <h3 class="footer__title">Hours</h3>
+          <p>
+            <strong>Monday - Friday:</strong> 9am - 7pm
+            <br />
+            <strong>Saturday - Sunday:</strong> 10am - 5pm
+          </p>
+        </div>
+        <div class="footer__social footer__container--item">
+          <h3 class="footer__title">Social</h3>
+          <img
+            class="footer__social--logo"
+            src="./assets/logos/Facebook-Icon.svg"
+            alt="Facebook"
+          />
+          <img
+            class="footer__social--logo"
+            src="./assets/logos/Yelp-Icon.svg"
+            alt="Yelp"
+          />
+          <img
+            class="footer__social--logo"
+            src="./assets/logos/Instagram-Icon.svg"
+            alt="Instagram"
+          />
+        </div>
+      </div>
+      <img
+        class="footer__icon footer__icon--right"
+        src="./assets/logos/coffee-beans-logo-and-footer.svg"
+        alt="coffee bean logo"
+      />
+    </footer>
+  </body>
+</html>
