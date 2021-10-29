@@ -18,11 +18,12 @@ $unit: 1.25rem;
     box-sizing: border-box;
 }
 
+/* Global Styling */
 body {
     padding: 0;
     margin: $no-margin;
 }
-h1, h2, h3, p, li, a {
+h1, h2, h3, p, li, strong, a {
     font-family: 'Open Sans', sans-serif;
     color: #393939;
     margin: $no-margin;
@@ -30,10 +31,11 @@ h1, h2, h3, p, li, a {
 }
 h1, h2 {
     font-size: 3.75rem;
-    font-weight: lighter;
 }
 h3, #toolbar-title {
     font-size: 2.06rem;
+}
+h1, h2, h3, #toolbar-title {
     font-weight: lighter;
 }
 p {
@@ -65,6 +67,10 @@ a {
         &--active-link {
            color: $secondary-colour;
         }
+    }
+    &__icon {
+        min-width: 3.125rem;
+        max-width: 7.5rem;
     }
 
 }

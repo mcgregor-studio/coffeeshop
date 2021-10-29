@@ -1,12 +1,13 @@
 /* All font sizing is based on the body's default root font size (16px) */
 /* Variables */
 /* Mixins */
+/* Global Styling */
 body {
   padding: 0;
   margin: 0;
 }
 
-h1, h2, h3, p, li, a {
+h1, h2, h3, p, li, strong, a {
   font-family: "Open Sans", sans-serif;
   color: #393939;
   margin: 0;
@@ -15,11 +16,13 @@ h1, h2, h3, p, li, a {
 
 h1, h2 {
   font-size: 3.75rem;
-  font-weight: lighter;
 }
 
 h3, #toolbar-title {
   font-size: 2.06rem;
+}
+
+h1, h2, h3, #toolbar-title {
   font-weight: lighter;
 }
 
@@ -52,8 +55,12 @@ a {
 .toolbar__list--active-link {
   color: #5BACC3;
 }
+.toolbar__icon {
+  min-width: 3.125rem;
+  max-width: 7.5rem;
+}
 
-/* Global Styling */
+/* Local Styling */
 h2, h3, p {
   text-align: center;
 }
@@ -143,16 +150,14 @@ ul.menu__nav {
   padding: 1.25rem;
 }
 .menu-section__title {
-  padding-bottom: 1.25rem;
-}
-.menu-section__item {
-  padding-top: 1.25rem;
+  margin-bottom: 2.5rem;
 }
 .menu-section__item--desc {
   font-size: 1.125rem;
   font-style: italic;
-  max-width: 50vw;
+  max-width: 35vw;
 }
 .menu-section__item--price {
   color: #5BACC3;
+  margin-bottom: 1.25rem;
 }/*# sourceMappingURL=menu.css.map */

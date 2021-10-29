@@ -1,4 +1,4 @@
-/* Global Styling */
+/* Local Styling */
 @use './partials/global';
 
 h2, h3, p{
@@ -82,19 +82,19 @@ ul.menu__nav {
 .menu-section {
     @include global.flex-center();
     flex-direction: column;
-    padding: 1.25rem;
+    padding: global.$unit;
     &__title {
-        padding-bottom: 1.25rem;
+        margin-bottom: 2.5rem;
     }
     &__item {
-        padding-top: 1.25rem;
         &--desc {
             font-size: 1.125rem;
             font-style: italic;
-            max-width: 50vw;
+            max-width: 35vw;
         }
         &--price {
             color: global.$secondary-colour;
+            margin-bottom: global.$unit;
         }
         
     }

@@ -1,4 +1,4 @@
-/* Global Styling */
+/* Local Styling */
 @use 'partials/global';
 
 .button {
@@ -60,10 +60,7 @@
 header, .intro, footer {
     background: global.$primary-colour;
 }
-.toolbar__icon, .footer__social--logo, .discounts__row--icon {
-    min-width: 3.125rem;
-    max-width: 7.5rem;
-}
+
 
 /* Intro */
 .intro {
@@ -71,6 +68,7 @@ header, .intro, footer {
     justify-content: space-between;
     align-items: center;
     padding: 0 5rem 5rem 5rem;
+    flex-wrap: wrap;
 
     &__container {
         width: 33vw;
@@ -139,6 +137,7 @@ header, .intro, footer {
         }
 
         &--price {
+            font-size: 2.06rem;
             color: global.$secondary-colour;
         }
     }
@@ -164,7 +163,11 @@ header, .intro, footer {
     &__container {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         padding: 5rem;
+    }
+    &__title {
+        margin-bottom: 2.5rem;
     }
     &__section {
         &--left {
@@ -185,12 +188,26 @@ header, .intro, footer {
             left: -0.9375rem;
             border: 0.3125rem solid global.$secondary-colour;
         }
-
+        &--container {
+            @include discounts();
+            padding: 3.75rem 0;
+            z-index: 10;
+            &:hover {
+                animation-name: spin;
+                animation-duration: 2s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+        }
     }
     &__row {
         display: flex;
         justify-content: space-between;
         padding: global.$unit 0;
+        &--icon {
+            @extend .toolbar__icon;
+            height: 2.5rem;
+        }
     }
     &__text {
         background: global.$tertiary-colour;
@@ -204,16 +221,12 @@ header, .intro, footer {
         animation-name: flash;
         animation-duration: 2.5s;
         animation-iteration-count: infinite;
-    }
-    &__brew--can {
-        z-index: 10;
-        &:hover {
-            animation-name: spin;
-            animation-duration: 2s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
+        &--bold {
+            font-size: 2.8125rem;
+            color: #FFF;
         }
     }
+    
 }
 
 /* Footer */
@@ -232,6 +245,7 @@ header, .intro, footer {
         opacity: 25%;
         min-width: 3.75rem;
         max-width: 7.5rem;
+        height: 6.25rem;
         &--left {
             position: absolute;
             top: global.$unit;
@@ -242,6 +256,17 @@ header, .intro, footer {
             bottom: global.$unit;
             right: -1.25rem;
         }
+    
+    }
+    &__social {
+        &--logo {
+            @extend .toolbar__icon;
+        }
+    &__hours {
+        &--bold {
+            font-size: 1.125rem;
+        }
+    }
     }
     
 }
